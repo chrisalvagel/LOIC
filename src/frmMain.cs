@@ -102,7 +102,7 @@ namespace LOIC
 						Wtf ("I don't think ports are supposed to be written like THAT.", silent);
 						return;
 					}
-					if (!Functions.ParseInt(txtThreads.Text, 1, (bKonami ? 1337 : 99), out iThreads)) {
+					if (!Functions.ParseInt(txtThreads.Text, 1, (bKonami ? 1337 : 1000), out iThreads)) {
 						Wtf ("What on earth made you put THAT in the threads field?", silent);
 						return;
 					}
