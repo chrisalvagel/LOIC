@@ -699,7 +699,7 @@ namespace LOIC
 								cbMethod.SelectedIndex = index;
 							break;
 						case "threads":
-							if (Functions.ParseInt(value, 1, 99, out num))
+							if (Functions.ParseInt(value, 1, 1000, out num))
 								txtThreads.Text = num.ToString();
 							break;
 						case "wait":
@@ -738,7 +738,7 @@ namespace LOIC
 								chkAllowGzip.Checked = false;
 							break;
 						case "sockspthread":
-							if (Functions.ParseInt(value, 1, 99, out num))
+							if (Functions.ParseInt(value, 1, 1000, out num))
 								txtSLSpT.Text = num.ToString();
 							break;
 					}
